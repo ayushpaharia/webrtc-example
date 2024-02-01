@@ -1,0 +1,70 @@
+Arguments: 
+  /usr/bin/node-18 /usr/local/bin/yarn install
+
+PATH: 
+  /home/rezza/.pyenv/shims:/usr/local/sbin:/usr/local/bin:/usr/.local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/rezza/.local/bin:/home/rezza/.cargo/bin:/usr/local/go/bin:/home/rezza/Desktop/go_workspace/bin:/home/rezza/.pyenv/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@app%2fclient: Not found
+      at params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:517:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:517:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:631:28)
+      at IncomingMessage.emit (node:events:529:35)
+      at endReadableNT (node:internal/streams/readable:1400:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "@app/server",
+    "version": "1.0.0",
+    "main": "src/index.mjs",
+    "private": true,
+    "scripts": {
+      "dev": "nodemon src/server.ts",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@fastify/cors": "8.2.0",
+      "@fastify/websocket": "7.1.1",
+      "cors": "2.8.5",
+      "express": "4.18.1",
+      "fastify": "4.9.2",
+      "fastify-plugin": "4.3.0",
+      "fastify-socket.io": "4.0.0",
+      "socket.io": "4.5.2",
+      "twilio": "3.82.1",
+      "uuid": "9.0.0"
+    },
+    "devDependencies": {
+      "@types/node": "18.11.9",
+      "@types/uuid": "8.3.4",
+      "@types/ws": "8.5.3",
+      "fastify-tsconfig": "1.0.1",
+      "pino-pretty": "9.1.1",
+      "ts-node": "10.9.1",
+      "typescript": "4.8.4"
+    },
+    "description": ""
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
